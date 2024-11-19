@@ -59,7 +59,7 @@ internal class Fish
     public int Bottom => Top + Depth;
 
     public override string ToString() =>
-        $"{Species} ({Weight:0.00} kg) - Top: {Top} cm, Depth: {Depth} cm, {(Predator ? "Carnivore" : "Herbivore")}";
+        $"{Species} ({Weight:0.00} kg) - Top: {Top} cm, Bottom: {Bottom} cm, {(Predator ? "Carnivore" : "Herbivore")}";
 
     public Fish(string species, bool predator, double weight, int top, int depth)
     {
